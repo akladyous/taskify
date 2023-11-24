@@ -2,10 +2,8 @@ import { SignUp } from '@clerk/nextjs';
 
 export default function SignUpPage() {
   return (
-    <main className='min-h-screen'>
-      <div className='cl-wrapper flex justify-center'>
-        <SignUp redirectUrl={'/'} />
-      </div>
-    </main>
+    <section className='flex h-screen justify-center items-center '>
+      <SignUp redirectUrl={'/'} />
+    </section>
   );
 }
