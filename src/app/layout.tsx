@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import '@/app/globals.css';
 import type { Metadata } from 'next';
 import { ThemeProvider } from '@/components/theme/ThemeProvider';
+import NavBar from '@/components/ui/header/NavBar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ClerkProvider
           appearance={{ elements: { footer: 'hidden', footerAction: { display: 'none' } } }}>
           <ThemeProvider attribute='class' defaultTheme='light'>
+            <NavBar />
             {children}
           </ThemeProvider>
         </ClerkProvider>
