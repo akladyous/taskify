@@ -5,25 +5,8 @@ import { useCallback, useRef } from 'react';
 import { HamburgerMenu } from './HamburgerMenu';
 import { ThemeToggler } from '@/components/theme/ThemeToggler';
 import { UserButton } from '@clerk/nextjs';
-
-const navItems = [
-  {
-    name: 'Features',
-    href: '#',
-  },
-  {
-    name: 'Pricing',
-    href: '#',
-  },
-  {
-    name: 'Customers',
-    href: '#',
-  },
-  {
-    name: 'Blog',
-    href: '#',
-  },
-];
+import { navItems } from '@/lib/appConfig';
+import CurrentUser from './CurrentUser';
 
 export default function NavBar() {
   const hamburgerRef = useRef<any>();
@@ -37,7 +20,7 @@ export default function NavBar() {
 
   return (
     <>
-      <header>
+      <header className=''>
         <nav className='flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg'>
           <section>
             <div>
@@ -52,20 +35,28 @@ export default function NavBar() {
             />
           </section>
 
-          <section className='w-full md:flex md:items-center md:w-auto hidden' ref={menuRef}>
-            <ul className='pt-4 text-base md:flex md:justify-between md:pt-0'>
+          <section
+            className='w-full md:flex md:items-center items-center md:w-auto hidden'
+            ref={menuRef}>
+            <ul className='pt-4 text-base | md:flex md:items-center md:justify-between md:pt-0'>
               {navItems.map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href={item.href}
-                    className='md:p-4 hover:md:border-l-0 hover:md:border-b-2  py-1 block my-1 pl-1 hover:border-l-4  hover:border-gray-300'>
+                <li
+                  key={i}
+                  className='block md:p-4 hover:md:border-l-0 hover:md:border-b-2 | py-1 my-1 pl-1 hover:border-l-4 hover:border-gray-300'>
+                  <Link href={item.href} className=''>
                     {item.name}
                   </Link>
                 </li>
               ))}
             </ul>
-            <ThemeToggler />
-            <UserButton />
+            <div className='text-base | md:flex md:items-center md:justify-between md:pt-0'>
+              <div className='md:block md:p-4'>
+                <CurrentUser />
+              </div>
+              <div className='md:block md:p-4 hidden'>
+                <ThemeToggler />
+              </div>
+            </div>
           </section>
         </nav>
       </header>
