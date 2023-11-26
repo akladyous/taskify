@@ -1,5 +1,4 @@
 import { ThemeToggler } from '@/components/theme/ThemeToggler';
-
 import { UserButton } from '@clerk/nextjs';
 
 export default function Home() {
@@ -10,9 +9,6 @@ export default function Home() {
         praesentium ab vero deleniti delectus eveniet doloribus minus ex pariatur reiciendis quos
         officia optio aliquid.
       </p>
-
-      <ThemeToggler />
-      <UserButton />
     </main>
   );
 }
