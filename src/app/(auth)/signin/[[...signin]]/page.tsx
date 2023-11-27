@@ -7,6 +7,7 @@ export default function SignInPage() {
   return (
     <section className='flex h-screen justify-center items-center '>
       <SignIn
+        afterSignInUrl={'/'}
         appearance={{
           variables: {},
           elements: {

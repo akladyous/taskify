@@ -8,7 +8,7 @@ export default function CurrentUser() {
   const { isLoaded, isSignedIn } = useAuth();
 
   if (isLoaded && isSignedIn) {
-    return <UserButton />;
+    return <UserButton afterSignOutUrl='/' userProfileUrl='/me' />;
   }
 
   return (
