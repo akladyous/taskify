@@ -37,7 +37,7 @@ export default function NavBar() {
         <section
           className='w-full md:flex md:items-center items-center md:w-auto hidden'
           ref={menuRef}>
-          <ul className='pt-4 text-base | md:flex md:items-center md:justify-between md:pt-0'>
+          <ul className='pt-4 text-base md:flex md:items-center md:justify-between md:pt-0'>
             {navItems.map((item, i) => (
               <li
                 key={i}
@@ -48,7 +48,7 @@ export default function NavBar() {
               </li>
             ))}
           </ul>
-          <div className='text-base | md:flex md:items-center md:justify-between md:pt-0 md: space-x-2'>
+          <div className='text-base md:flex md:items-center md:justify-between md:pt-0 md: space-x-2'>
             <div className='md:block '>
               <CurrentUser />
             </div>
