@@ -1,2 +1,8 @@
 .nav-item {
+  transition: background 300ms ease-in-out;
+  background-image: linear-gradient(to bottom, #fff 0%, #c7c7c2 100%);
+}
+.nav:hover {
+  background-position: -200%;
+  transition: background 300ms ease-in-out;
 }
