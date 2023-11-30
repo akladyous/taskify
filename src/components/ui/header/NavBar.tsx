@@ -7,6 +7,7 @@ import { ThemeToggler } from '@/components/theme/ThemeToggler';
 import { UserButton } from '@clerk/nextjs';
 import { navItems } from '@/lib/appConfig';
 import CurrentUser from './CurrentUser';
+import styles from './navbar.module.css';
 
 export default function NavBar() {
   const hamburgerRef = useRef<any>();
@@ -42,7 +43,7 @@ export default function NavBar() {
               <li
                 key={i}
                 className='block md:p-4 hover:md:border-l-0 hover:md:border-b-2 | py-1 my-1 pl-1 hover:border-l-4 hover:border-gray-300'>
-                <Link href={item.href} className=''>
+                <Link href={item.href} className={styles['nav-item']}>
                   {item.name}
                 </Link>
               </li>
