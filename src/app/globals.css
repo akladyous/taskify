@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.logo {
+  user-select: none;
+}
+
 .progress-bar {
   position: fixed;
   top: 0;
