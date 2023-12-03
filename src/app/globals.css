@@ -24,6 +24,11 @@ svg {
   display: block;
 }
 
+ul[role='list'],
+li[role='list'] {
+  list-style: none;
+}
+
 .logo {
   user-select: none;
 }
