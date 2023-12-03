@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html:focus {
+  scroll-behavior: smooth;
+}
+
 .logo {
   user-select: none;
 }
