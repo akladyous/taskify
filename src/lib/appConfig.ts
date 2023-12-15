@@ -1,11 +1,11 @@
 export const appConfig = {
   navbar: [
     {
-      name: 'Features',
+      name: 'milena',
       href: '#',
     },
     {
-      name: 'Pricing',
+      name: 'david',
       href: '#',
     },
     {
