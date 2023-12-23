@@ -14,7 +14,10 @@
 html:focus {
   scroll-behavior: smooth;
 }
-
+.item {
+  width: fit-content;
+  background-color: aqua;
+}
 /* ensure that certain types of elements (images, pictures, and SVGs) do not exceed the width of their containing parent element. This rule is particularly useful for creating responsive designs. */
 img,
 picture,
