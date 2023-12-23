@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.roboto {
-  font-family: var(--font-roboto);
-}
 *,
 *::before,
 *::after {
