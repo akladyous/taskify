@@ -6,11 +6,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
-}
-* {
   margin: 0;
   padding: 0;
-  /* font: inherit; */
+  font: inherit;
+  box-sizing: border-box;
 }
 html:focus {
   scroll-behavior: smooth;
