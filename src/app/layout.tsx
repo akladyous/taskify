@@ -10,12 +10,6 @@ const inter = Inter({
   variable: '--font-inter',
   display: 'swap',
 });
-const roboto_mono = Roboto_Mono({
-  subsets: ['latin'],
-  variable: '--font-roboto-mono',
-  display: 'swap',
-});
-
 const roboto = Roboto({
   weight: '400',
   subsets: ['latin'],
@@ -26,7 +20,7 @@ const roboto = Roboto({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={`${inter.className}  ${roboto_mono.variable} ${roboto.variable}`}>
+      <body className={`${inter.className}  ${inter.variable} ${roboto.variable}`}>
         <ClerkProvider
           appearance={{ elements: { footer: 'hidden', footerAction: { display: 'none' } } }}>
           <ThemeProvider attribute='class' defaultTheme='light'>
