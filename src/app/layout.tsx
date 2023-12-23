@@ -1,5 +1,5 @@
 import { ClerkProvider } from '@clerk/nextjs';
-import { Inter, Roboto, Roboto_Mono } from 'next/font/google';
+import { Inter, Roboto } from 'next/font/google';
 import '@/app/globals.css';
 import type { Metadata } from 'next';
 import { ThemeProvider } from '@/components/theme/ThemeProvider';
