@@ -1,4 +1,10 @@
 export const appConfig = {
+  app: {
+    name: 'MyApp',
+    description: 'Next.js Starter Kit',
+    url: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+    logo: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+  },
   navbar: [
     {
       name: 'Features',
