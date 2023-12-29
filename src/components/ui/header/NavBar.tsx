@@ -42,7 +42,7 @@ export default function NavBar() {
               <li
                 key={i}
                 className='block md:p-4 hover:md:border-l-0 hover:md:border-b-2 | py-1 my-1 pl-1 hover:border-l-4 hover:border-gray-300'>
-                <Link href={item.href}>{item.name}</Link>
+                <Link href={item.link}>{item.label}</Link>
               </li>
             ))}
           </ul>
