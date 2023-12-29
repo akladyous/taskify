@@ -24,4 +24,18 @@ model User {
   status    Boolean? @default(true)
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at") @db.Timestamptz(6)
+  Task      Task[]
+}
+
+model Task {
+  id          String    @id @default(uuid())
+  title       String
+  description String?
+  priority    String    @default("Medium")
+  dueDate     DateTime?
+  completedAt DateTime?
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at") @db.Timestamptz(6)
+  userId      String
+  user        User      @relation(fields: [userId], references: [id])
 }
