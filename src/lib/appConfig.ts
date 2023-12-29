@@ -1,28 +1,32 @@
 export const appConfig = {
-  app: {
-    name: 'MyApp',
-    description: 'Next.js Starter Kit',
-    url: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-    logo: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+  meta: {
+    name: 'MyAwesomeApp',
+    description: 'A Next.js Starter Kit',
+    url: 'https://myawesomeapp.com',
+    logo: 'path/to/logo.png',
   },
-  navbar: [
+  navigation: [
     {
-      name: 'Features',
-      href: '#',
+      label: 'Home',
+      link: '/',
     },
     {
-      name: 'Pricing',
-      href: '#',
+      label: 'Features',
+      link: '/features',
     },
     {
-      name: 'Customers',
-      href: '#',
+      label: 'Pricing',
+      link: '/pricing',
     },
     {
-      name: 'Blog',
-      href: '#',
+      label: 'About Us',
+      link: '/about',
+    },
+    {
+      label: 'Blog',
+      link: '/blog',
     },
   ],
 };
-
-export const navItems = appConfig.navbar;
+export const appMeta = appConfig.meta;
+export const navItems = appConfig.navigation;
