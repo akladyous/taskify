@@ -21,10 +21,12 @@ export default function NavBar() {
 
   return (
     <header className='md:h-16 px-4'>
-      <nav className='flex items-center justify-between flex-wrap w-full py-4 md:py-0 text-lg'>
+      <nav className='flex items-center justify-between flex-wrap w-full py-4 md:py-0'>
         <section>
           <div>
-            <Link href={'/'}>Taskify</Link>
+            <Link className='text-lg' href={'/'}>
+              Taskify
+            </Link>
           </div>
         </section>
         <section className='md:hidden'>
@@ -40,7 +42,7 @@ export default function NavBar() {
           ref={menuRef}>
           <ul
             role='list'
-            className='pt-4 text-base md:flex md:items-center md:justify-between md:pt-0'>
+            className='pt-4 md:flex md:items-center md:justify-between md:pt-0 text-base'>
             {navItems.map((item, i) => (
               <li
                 role='listitem'
