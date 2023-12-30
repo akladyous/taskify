@@ -7,7 +7,8 @@ import { ThemeToggler } from '@/components/theme/ThemeToggler';
 import { UserButton } from '@clerk/nextjs';
 import { navItems } from '@/lib/appConfig';
 import CurrentUser from './CurrentUser';
-import styles from './navbar.module.css';
+import './navbar.css';
+import { cn } from '@/lib/utils';
 
 export default function NavBar() {
   const hamburgerRef = useRef<any>();
@@ -20,14 +21,12 @@ export default function NavBar() {
   }, []);
 
   return (
-    <header className='md:h-16 px-4'>
-      <nav className='flex items-center justify-between flex-wrap w-full py-4 md:py-0'>
+    <header className=''>
+      <nav className={cn('navbar')}>
         <section>
-          <div>
-            <Link className='text-lg' href={'/'}>
-              Taskify
-            </Link>
-          </div>
+          <Link className='text-lg' href={'/'}>
+            Taskify
+          </Link>
         </section>
         <section className='md:hidden'>
           <HamburgerMenu

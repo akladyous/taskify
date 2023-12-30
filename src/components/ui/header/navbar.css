@@ -1,0 +1,25 @@
+ul[role='list'],
+li[role='listitem'] {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: auto;
+}
+header {
+  height: 100%;
+  padding: 1rem;
+  transition: height 4s ease;
+}
+@media (min-width: 768px) {
+  header {
+    padding: 0;
+    padding-inline: 1rem;
+    background-color: aqua;
+    height: 4rem;
+  }
+}
