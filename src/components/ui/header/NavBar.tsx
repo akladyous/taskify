@@ -37,7 +37,9 @@ export default function NavBar() {
         <section
           className='w-full md:flex md:items-center items-center md:w-auto hidden'
           ref={menuRef}>
-          <ul className='pt-4 text-base md:flex md:items-center md:justify-between md:pt-0'>
+          <ul
+            role='list'
+            className='pt-4 text-base md:flex md:items-center md:justify-between md:pt-0'>
             {navItems.map((item, i) => (
               <li
                 key={i}
