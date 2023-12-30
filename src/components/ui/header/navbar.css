@@ -13,13 +13,12 @@ li[role='listitem'] {
 header {
   height: 100%;
   padding: 1rem;
-  transition: height 4s ease;
+  transition: height 500ms;
 }
 @media (min-width: 768px) {
   header {
     padding: 0;
     padding-inline: 1rem;
-    background-color: aqua;
     height: 4rem;
   }
 }

@@ -17,26 +17,29 @@ export default function NavBar() {
   const handleClick = useCallback(() => {
     if (menuRef.current) {
       menuRef.current.classList.toggle('hidden');
+      const menu = document.querySelector('.nav-menu');
+
+      menu?.style.height === '100%' ? '4rem' : '100%';
     }
   }, []);
 
   return (
     <header className=''>
-      <nav className={cn('navbar')}>
-        <section>
+      <nav className='navbar'>
+        <div className='nav-brand'>
           <Link className='text-lg' href={'/'}>
             Taskify
           </Link>
-        </section>
-        <section className='md:hidden'>
+        </div>
+        <div className=' md:hidden'>
           <HamburgerMenu
             className='w-6 h-6 cursor-pointer block'
             handler={handleClick}
             ref={hamburgerRef}
           />
-        </section>
+        </div>
 
-        <section className='w-full md:flex   md:w-auto' ref={menuRef}>
+        <div className='nav-menu w-full md:flex md:w-auto' ref={menuRef}>
           <ul
             role='list'
             className='pt-4 md:flex md:items-center md:justify-between md:pt-0 text-base'>
@@ -57,7 +60,7 @@ export default function NavBar() {
               <ThemeToggler />
             </div>
           </div>
-        </section>
+        </div>
       </nav>
     </header>
   );
