@@ -42,6 +42,7 @@ export default function NavBar() {
             className='pt-4 text-base md:flex md:items-center md:justify-between md:pt-0'>
             {navItems.map((item, i) => (
               <li
+                role='listitem'
                 key={i}
                 className='block md:p-4 hover:md:border-l-0 hover:md:border-b-2 | py-1 my-1 pl-1 hover:border-l-4 hover:border-gray-300'>
                 <Link href={item.link}>{item.label}</Link>
