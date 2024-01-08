@@ -17,7 +17,7 @@ export default function NavBar() {
   const handleClick = useCallback(() => {
     if (menuRef.current) {
       menuRef.current.classList.toggle('hidden');
-      const menu: HTMLElement | null = document.querySelector('.nav-menu');
+      const menu: HTMLDivElement | null = document.querySelector('.nav-menu');
 
       menu?.style.height === '100%' ? '4rem' : '100%';
     }
