@@ -39,7 +39,7 @@ export default function NavBar() {
           />
         </div>
 
-        <div className='nav-menu w-full md:flex md:w-auto' ref={menuRef}>
+        <div className='nav-menu w-full md:flex md:w-auto hidden' ref={menuRef}>
           <ul
             role='list'
             className='pt-4 md:flex md:items-center md:justify-between md:pt-0 text-base'>
