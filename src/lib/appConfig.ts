@@ -1,3 +1,8 @@
+export type NavItem = {
+  label: string;
+  link: string;
+};
+
 export const appConfig = {
   meta: {
     name: 'MyAwesomeApp',
@@ -29,4 +34,4 @@ export const appConfig = {
   ],
 };
 export const appMeta = appConfig.meta;
-export const navItems = appConfig.navigation;
+export const navItems: NavItem[] = appConfig.navigation;
