@@ -26,8 +26,3 @@ export default function CurrentUser() {
     </section>
   );
 }
-function sum(x: number, y: number) {
-  return x + y;
-}
-
-console.log(1, 2);
