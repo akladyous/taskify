@@ -7,7 +7,7 @@ import { ThemeToggler } from '@/components/theme/ThemeToggler';
 import { UserButton } from '@clerk/nextjs';
 import { navItems } from '@/lib/appConfig';
 import CurrentUser from './CurrentUser';
-// import './navbar.css';
+import './navbar.css';
 import { cn } from '@/lib/utils';
 
 export default function NavBar() {
@@ -31,7 +31,7 @@ export default function NavBar() {
             Taskify
           </Link>
         </div>
-        <div className=' md:hidden'>
+        <div className='md:hidden'>
           <HamburgerMenu
             className='w-6 h-6 cursor-pointer block'
             handler={handleClick}
