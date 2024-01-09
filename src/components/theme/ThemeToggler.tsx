@@ -20,4 +20,5 @@ export function ThemeToggler() {
       <span className='sr-only'>Toggle theme</span>
     </Button>
   );
+  //
 }
