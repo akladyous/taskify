@@ -21,6 +21,6 @@ export function ThemeToggler() {
     </Button>
   );
   // 1
-  //
+  // 2
   // 3
 }
