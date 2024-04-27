@@ -15,8 +15,8 @@ export function ThemeToggler() {
 
   return (
     <Button className='rounded-full' variant='outline' size='icon' onClick={toggleTheme}>
-      <SunIcon className='h-[1rem] w-[1rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0' />
-      <MoonIcon className='h-[1rem] w-[1rem] rotate-90 scale-0  transition-all dark:rotate-0 dark:scale-100 absolute' />
+      <SunIcon className='rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0' size={20} />
+      <MoonIcon className='rotate-90 scale-0  transition-all dark:rotate-0 dark:scale-100 absolute' size={20} />
       <span className='sr-only'>Toggle theme</span>
     </Button>
   );
