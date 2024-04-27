@@ -2,7 +2,7 @@
 
 import { useCallback } from 'react';
 
-import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
+import { MoonIcon, SunIcon } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { Button } from '@/components/ui/button';
 
@@ -21,3 +21,5 @@ export function ThemeToggler() {
     </Button>
   );
 }
+
+// {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
