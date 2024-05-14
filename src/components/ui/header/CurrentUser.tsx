@@ -12,17 +12,13 @@ export default function CurrentUser() {
   }
 
   return (
-    <section className='md:flex justify-center items-center py-0  gap-x-2'>
-      <div>
-        <Link className='block md:p-4 py-1 my-1' href='/signup'>
-          Join Now
-        </Link>
-      </div>
-      <div>
-        <Link className='block md:p-4 py-1 my-1' href='/signin'>
-          Sign In
-        </Link>
-      </div>
+    <section className='md:flex justify-center items-center py-0'>
+      <Link className='block md:p-4 py-1 my-1' href='/signup'>
+        Join Now
+      </Link>
+      <Link className='block md:p-4 py-1 my-1' href='/signin'>
+        Sign In
+      </Link>
     </section>
   );
 }
