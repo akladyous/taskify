@@ -32,17 +32,11 @@ export default function NavBar() {
           </Link>
         </div>
         <div className='md:hidden'>
-          <HamburgerMenu
-            className='w-6 h-6 cursor-pointer block'
-            handler={handleClick}
-            ref={hamburgerRef}
-          />
+          <HamburgerMenu className='w-6 h-6 cursor-pointer block' handler={handleClick} ref={hamburgerRef} />
         </div>
 
         <div className='nav-menu w-full md:flex md:w-auto hidden' ref={menuRef}>
-          <ul
-            role='list'
-            className='pt-4 md:flex md:items-center md:justify-between md:pt-0 text-base'>
+          <ul role='list' className='pt-4 md:flex md:items-center md:justify-between md:pt-0 text-base'>
             {navItems.map((item, i) => (
               <li
                 role='listitem'
