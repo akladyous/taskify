@@ -1,24 +1,24 @@
-ul[role='list'],
-li[role='listitem'] {
-  list-style: none;
+ul[role="list"],
+li[role="listitem"] {
+    list-style: none;
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
 }
 header {
-  height: 100%;
-  padding: 1rem;
-  transition: height 500ms;
+    height: 100%;
+    padding: 1rem;
+    transition: height 500ms;
 }
 @media (min-width: 768px) {
-  header {
-    padding: 0;
-    padding-inline: 1rem;
-    height: 4rem;
-  }
+    header {
+        padding: 0;
+        padding-inline: 1rem;
+        height: 4rem;
+    }
 }
