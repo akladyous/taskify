@@ -1,9 +1,8 @@
+.vscode/*
 
 # typescript
-*.tsbuildinfo
-next-env.d.ts
-
-.vscode/*
+**/*.tsbuildinfo
+**/next-env.d.ts
 **/logs/
 **/node_modules/
 **/.env*
